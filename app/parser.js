@@ -34,6 +34,28 @@ php.on('close', function () {
 	});
 	$('#table11 tr').each(function () {
 		var row = this;
+		$(row).find('img').each(function(){
+			var src = $(this).attr('src');
+			if (typeof src == 'undefined')
+				src = $(this).attr('SRC');
+			if (typeof src == 'undefined')
+				return;
+			if (src.indexOf('http://') == 0)
+				return;
+			$(this).attr('src', 'http://www.softlab.ntua.gr/~fotakis/discrete_math/' + src);
+			$(this).removeAttr('SRC');
+		});
+		$(row).find('a').each(function(){
+			var href = $(this).attr('href');
+			if (typeof href == 'undefined')
+				href = $(this).attr('HREF');
+			if (typeof href == 'undefined')
+				return;
+			if (href.indexOf('http://') == 0)
+				return;
+			$(this).attr('href', 'http://www.softlab.ntua.gr/~fotakis/discrete_math/' + href);
+			$(this).removeAttr('HREF');
+		});
 		var date = $(row).find('td').first().find('strong, b font').first().text(), content = $(row).find('td').last().html(); 
 		if (date == '')
 			return;
