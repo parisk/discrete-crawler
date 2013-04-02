@@ -11,6 +11,6 @@ The application needs [Node](http://www.nodejs.org) and [PHP](http://www.php.net
 The following Node modules are needed for the application to be run.
 
 * [Cheerio](https://github.com/MatthewMueller/cheerio)
-* [Node RSS](https://github.com/dylang/node-rss)
+* [RSS for Node](https://github.com/dylang/node-rss)
 
 

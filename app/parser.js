@@ -1,6 +1,5 @@
 var cheerio = require('cheerio');
 var rss = require('rss');
-var fs = require('fs');
 var months = {
 	1: 'January',
 	2: 'February',
@@ -46,5 +45,5 @@ php.on('close', function () {
 			date: date
 		});
 	});
-	fs.writeFile('feed.xml', feed.xml());
+	console.log(feed.xml());
 });
