@@ -35,6 +35,8 @@ php.on('close', function () {
 	$('#table11 tr').each(function () {
 		var row = this;
 		var date = $(row).find('td').first().find('strong, b font').first().text(), content = $(row).find('td').last().html(); 
+		if (date == '')
+			return;
 		date = date.split('/');
 		date = months[parseInt(date[1])] + ' ' + date[0] + ', ' + date[2];
 		feed.item({
