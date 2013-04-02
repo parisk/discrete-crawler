@@ -12,3 +12,7 @@ logs
 results
 
 npm-debug.log
+
+app/feed.xml
+app/node_modules
+app/node_modules/*
