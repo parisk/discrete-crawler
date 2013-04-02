@@ -1,4 +1,4 @@
-discrete-crawler
+Discrete Crawler
 ================
 
 Website crawler and feed generator for [www.softlab.ntua.gr/~fotakis/discrete_math](http://www.softlab.ntua.gr/~fotakis/discrete_math/
